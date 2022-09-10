@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "diamond-hands-website"
+  },
+  "targets": {
+    "diamond-hands-website": {
+      "hosting": {
+        "diamondhands2": [
+          "diamond-hands-website"
+        ]
+      }
+    }
+  }
+}

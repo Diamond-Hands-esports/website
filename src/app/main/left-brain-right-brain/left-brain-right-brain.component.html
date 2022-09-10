@@ -1,0 +1,104 @@
+<div class="container-fluid">
+  <div class="container">
+
+    <div class="mt-5 pb-5"></div>
+
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+          <h1 class="mat-display-2 mt-5">One team, two perspectives.</h1>
+          <h1>The theory is that people are either left-brained or right-brained, meaning that one side of their brain is dominant. Try it out and discover us the way you like</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-lg-block">
+
+      <div class="row">
+
+        <div class="col-lg-4 offset-lg-2 mt-5">
+          <div class="text-end">
+  
+            <img class="mat-elevation-z2 img-fluid mb-4" style="width: 300px; height: 400px; border-radius: 8px;" src="../assets/leftbrain.jpg">
+            <h1 class="mt-5">Left brain half.</h1>
+            <h3 class="mt-2 pb-2">The left brain is more verbal, analytical, and orderly than the right brain. It’s sometimes called the digital brain. It’s better at things like reading, writing, and computations</h3>
+    
+            <mat-list>
+              <mat-list-item *ngFor="let entry of leftBrainList">
+                <mat-icon mat-list-icon color="primary">{{entry.icon}}</mat-icon>
+                <div mat-line>{{entry.name}}</div>
+              </mat-list-item>
+            </mat-list>
+    
+            <button class="mt-5" disabled mat-raised-button color="primary">Lets go left brain!</button>
+  
+          </div>
+        </div>
+  
+        <div class="col-lg-4 mt-5">
+  
+          <img class="mat-elevation-z2 img-fluid mb-4" style="width: 300px; height: 400px; border-radius: 8px;" src="../assets/rightbrain.jpg">
+          <h1 class="mt-5">Right brain half.</h1>
+          <h3 class="mt-2 pb-2">The right brain is more visual and intuitive. It’s sometimes referred to as the analog brain. It has a more creative and less organized way of thinking.</h3>
+  
+          <mat-list>
+            <mat-list-item *ngFor="let entry of rightBrainList" style="height: 56px;">
+              <div mat-line>{{entry.name}}</div>
+              <mat-icon style="margin: 8px;" color="primary">{{entry.icon}}</mat-icon>
+            </mat-list-item>
+          </mat-list>
+  
+          <button class="mt-5" disabled mat-raised-button color="primary">Lets go right brain!</button>
+  
+        </div>
+      </div>
+
+    </div>
+
+    <div class="d-block d-lg-none">
+
+      <div class="row">
+        <div class="col-lg-3 offset-lg-3 mt-5">
+
+          <div class="d-flex justify-content-center">
+            <img class="mat-elevation-z2 img-fluid" style="width: 300px; height: 400px; border-radius: 8px;" src="../assets/leftbrain.jpg">
+          </div>
+            <h1 class="mt-5">Left brain half.</h1>
+            <h3 class="mt-2">The left brain is more verbal, analytical, and orderly than the right brain. It’s sometimes called the digital brain. It’s better at things like reading, writing, and computations</h3>
+    
+            <mat-list>
+              <mat-list-item *ngFor="let entry of leftBrainList">
+                <mat-icon mat-list-icon color="primary">{{entry.icon}}</mat-icon>
+                <div mat-line>{{entry.name}}</div>
+              </mat-list-item>
+            </mat-list>
+    
+            <button class="mt-5" disabled mat-raised-button color="primary">Lets go left brain!</button>
+
+        </div>
+  
+        <div class="col-lg-3 mt-5">
+          
+          <div class="d-flex justify-content-center">
+            <img class="mat-elevation-z2 img-fluid" style="width: 300px; height: 400px; border-radius: 8px;" src="../assets/rightbrain.jpg">
+          </div>
+          <h1 class="mt-5">Right brain half.</h1>
+          <h3 class="mt-2">The right brain is more visual and intuitive. It’s sometimes referred to as the analog brain. It has a more creative and less organized way of thinking.</h3>
+  
+          <mat-list>
+            <mat-list-item *ngFor="let entry of rightBrainList">
+              <mat-icon mat-list-icon color="primary">{{entry.icon}}</mat-icon>
+              <div mat-line>{{entry.name}}</div>
+            </mat-list-item>
+          </mat-list>
+  
+          <button class="mt-5" disabled mat-raised-button color="primary">Lets go right brain!</button>
+  
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-5 pb-5"></div>
+  </div>
+</div>
